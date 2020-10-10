@@ -16,3 +16,17 @@
   width: 100%;
   margin: 20px;
 }
+
+.app_formcontrol{
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.app_iconButton {
+  flex: 0;
+}
+
+.app_input{
+  flex: 1;
+  width: 90%;
+}

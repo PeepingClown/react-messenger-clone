@@ -44,10 +44,9 @@ function App() {
       <img className="logo" src="https://scontent-del1-1.xx.fbcdn.net/v/t39.8562-6/37789948_1959933824027454_666414594595487744_n.png?_nc_cat=1&amp;_nc_sid=6825c5&amp;_nc_ohc=Gq40jI-kFygAX-siOcM&amp;_nc_ht=scontent-del1-1.xx&amp;oh=aa415ae885d7d02d42e535160572929c&amp;oe=5FA7C933" alt="Messenger"></img>
       <h2>Welcome {username}</h2>
       <form className="app_form">
-      <FormControl>
-      <InputLabel>Enter Message...</InputLabel>
-      <Input value={input} onChange={event => setInput(event.target.value)}/>
-      <IconButton disabled={!input} variant="contained" color="primary" type="submit" onClick={sendMessage}>
+      <FormControl className="app_formcontrol">
+      <Input className="app_input" placeholder="Enter a message..." value={input} onChange={event => setInput(event.target.value)}/>
+      <IconButton className="app_iconButton" disabled={!input} variant="contained" color="primary" type="submit" onClick={sendMessage}>
         <SendIcon />
       </IconButton>
       </FormControl>
